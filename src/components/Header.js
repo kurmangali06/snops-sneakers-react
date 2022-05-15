@@ -11,7 +11,7 @@ export default function Header(props) {
     <header>
       <div className='headerLeft'>
         <Link to='/' >
-          <img width={40} height={40} src='/img/logo.svg' />
+          <img width={40} height={40} src='img/logo.svg' />
           <div className='headerInfo'>
             <h3>REACT SNEAKERS</h3>
             <p>Магазин лучших кроссовок</p>
@@ -21,7 +21,7 @@ export default function Header(props) {
       <div>
         <ul className='headerRight'>
           <li className='basket' onClick={props.onClickCart}>
-            <img src='img/basket' />
+            <img src='img/basket.svg' />
             <span>{totalPrice} руб.</span>
           </li>
           <li>
