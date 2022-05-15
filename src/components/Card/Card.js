@@ -37,7 +37,7 @@ export default function Card({ id, title, imageUrl, price, onPlus, onFavorite, f
         </ContentLoader>) : (
           <>
             <div className={style.favorite} onClick={onClickLike}>
-              < img src={isLike ? '/img/like.svg' : '/img/unlike.svg'} />
+              < img src={isLike ? 'img/like.svg' : 'img/unlike.svg'} />
             </div>
             <img width={133} height={112} src={imageUrl} />
             <h5>{title}</h5>
@@ -49,7 +49,7 @@ export default function Card({ id, title, imageUrl, price, onPlus, onFavorite, f
                 <b>{price}руб.</b>
               </div>
 
-              <img className={style.button} onClick={onClickPlus} width={11} height={11} src={isAdded ? '/img/v.svg' : '/img/Group 91.svg'} />
+              <img className={style.button} onClick={onClickPlus} width={11} height={11} src={isAdded ? 'img/v.svg' : 'img/Group 91.svg'} />
 
             </div></>
         )
