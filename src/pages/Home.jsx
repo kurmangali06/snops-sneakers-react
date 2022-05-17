@@ -15,7 +15,7 @@ export default function Home(
           {searchValue ? `Поиск по запросу:" ${searchValue}"` : "Все кроссовки!"}
         </h1>
         <div className='search-blog'>
-          <img src='img/Vector (3).svg' alt='seach' />
+          <img width={40} src='https://pbs.twimg.com/media/CgTni-0WQAAjHGJ.jpg:large' alt='seach' />
           {searchValue && < img onClick={() => setSearchValue('')} className="clear" src='img/unput.svg' />}
           <input onChange={onChangeSearchInput} placeholder='Поиск...' value={searchValue} />
         </div>

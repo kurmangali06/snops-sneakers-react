@@ -37,7 +37,7 @@ export default function Card({ id, title, imageUrl, price, onPlus, onFavorite, f
         </ContentLoader>) : (
           <>
             <div className={style.favorite} onClick={onClickLike}>
-              < img src={isLike ? 'img/like.svg' : 'img/unlike.svg'} />
+              < img width={11} height={11} src={isLike ? 'https://w7.pngwing.com/pngs/831/946/png-transparent-heart-love-symbol-scalable-graphics-symbol-of-love-s-love-heart-wikimedia-commons.png' : 'https://cdn.onlinewebfonts.com/svg/download_185019.png'} />
             </div>
             <img width={133} height={112} src={imageUrl} />
             <h5>{title}</h5>
@@ -49,7 +49,7 @@ export default function Card({ id, title, imageUrl, price, onPlus, onFavorite, f
                 <b>{price}руб.</b>
               </div>
 
-              <img className={style.button} onClick={onClickPlus} width={11} height={11} src={isAdded ? 'img/v.svg' : 'img/Group 91.svg'} />
+              <img className={style.button} onClick={onClickPlus} width={11} height={11} src={isAdded ? 'https://svgsilh.com/svg/42926-4caf50.svg' : 'https://i.pinimg.com/originals/85/a4/94/85a4949c6d36e132b841ca442322da74.png'} />
 
             </div></>
         )

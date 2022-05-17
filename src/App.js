@@ -90,11 +90,11 @@ function App() {
         {cartOpened && <Drawer items={cartItems} onClose={() => setCartOpened(false)} onRemove={onRemoveCart} />}
         <Header onClickCart={() => setCartOpened(true)} />
         <Routes>
-          < Route exact path="/" element={
+          < Route index element={
             <Home />} />
-          < Route exact path="/favorites" element={
+          < Route path="favorites" element={
             <Favorites />} />
-          < Route exact path="/orders" element={
+          < Route path="orders" element={
             <Orders />} />
         </Routes>
 
