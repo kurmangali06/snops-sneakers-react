@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/snops-sneakers-react/static/css/main.2e0c3c26.css",
-    "main.js": "/snops-sneakers-react/static/js/main.4d928b94.js",
+    "main.js": "/snops-sneakers-react/static/js/main.bc00d774.js",
     "index.html": "/snops-sneakers-react/index.html",
     "main.2e0c3c26.css.map": "/snops-sneakers-react/static/css/main.2e0c3c26.css.map",
-    "main.4d928b94.js.map": "/snops-sneakers-react/static/js/main.4d928b94.js.map"
+    "main.bc00d774.js.map": "/snops-sneakers-react/static/js/main.bc00d774.js.map"
   },
   "entrypoints": [
     "static/css/main.2e0c3c26.css",
-    "static/js/main.4d928b94.js"
+    "static/js/main.bc00d774.js"
   ]
 }
