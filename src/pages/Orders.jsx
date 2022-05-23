@@ -11,6 +11,7 @@ export function Orders() {
   const [orders, setOrders] = React.useState([]);
 
 
+
   React.useEffect(() => {
     (async () => {
       try {
@@ -18,8 +19,7 @@ export function Orders() {
         setOrders(data.reduce((prev, obj) => [...prev, ...obj.items], []));
 
       } catch (error) {
-
-        aa
+        console.log(error)
       }
     })();
   }, []);

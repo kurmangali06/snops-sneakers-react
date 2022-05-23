@@ -43,4 +43,10 @@
     }
 
   }
+  @media  (max-width : 1024px) {
+    width: 30%;
+  }
+  @media  (max-width : 767px) {
+    width: 95%;
+  }
 }

@@ -16,6 +16,7 @@ import { Orders } from './pages/Orders';
 
 
 
+
 function App() {
   const [items, setItems] = useState([])
   const [cartItems, setCartItems] = useState([])
@@ -45,7 +46,7 @@ function App() {
   const onAddToCart = (obj) => {
 
     if (cartItems.find((item) => Number(item.id) === Number(obj.id))) {
-      axios.delete(`https://627e11c7b75a25d3f3b112d3.mockapi.io/cart/${id}`);
+      axios.delete(`https://627e11c7b75a25d3f3b112d3.mockapi.io/cart`);
       setCartItems(prev => prev.filter(item => Number(item.id) !== Number(obj.id)))
     } else {
       axios.post('https://627e11c7b75a25d3f3b112d3.mockapi.io/cart', obj);
@@ -86,16 +87,22 @@ function App() {
 
   return (
     <AppContext.Provider value={{ cartItems, favorit, items, searchValue, setSearchValue, onChangeSearchInput, onAddToFavorite, onAddToCart, setCartOpened, setCartItems, isItemAdded }}>
-      <div className='wrapper'>
-        {cartOpened && <Drawer items={cartItems} onClose={() => setCartOpened(false)} onRemove={onRemoveCart} />}
+      <div className='wrapper'> {cartOpened && <Drawer items={cartItems} onClose={() => setCartOpened(false)} onRemove={onRemoveCart} />}
         <Header onClickCart={() => setCartOpened(true)} />
+
         <Routes>
-          < Route index element={
-            <Home />} />
-          < Route path="favorites" element={
-            <Favorites />} />
-          < Route path="orders" element={
-            <Orders />} />
+
+
+
+          <Route path='/' element={
+            <Home />} >
+            < Route path="/favorites" element={
+              <Favorites />} />
+            < Route path="/orders" element={
+              <Orders />} />
+          </Route>
+
+
         </Routes>
 
 

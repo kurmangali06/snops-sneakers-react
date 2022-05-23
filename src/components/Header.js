@@ -10,6 +10,8 @@ export default function Header(props) {
   return (
     <header>
       <div className='headerLeft'>
+
+
         <Link to='/' >
           <img width={40} height={40} src='img/logo.svg' />
           <div className='headerInfo'>

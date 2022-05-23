@@ -3,6 +3,7 @@ import { useContext } from 'react'
 import Card from '../components/Card/Card'
 import AppContext from '../context'
 
+
 export default function Home(
 ) {
   const { cartItems, items, searchValue, setSearchValue, onChangeSearchInput, onAddToFavorite, onAddToCart, } = useContext(AppContext)
